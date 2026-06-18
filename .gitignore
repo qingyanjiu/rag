@@ -1,0 +1,50 @@
+# ============================================================
+# DeepSeek 微调项目 .gitignore
+# ============================================================
+
+# --- 训练输出 ---
+outputs/
+checkpoint-*/
+__pycache__/
+unsloth_compiled_cache/
+wandb/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# --- 虚拟环境 ---
+.venv/
+venv/
+env/
+*.venv
+
+# --- HuggingFace 缓存 ---
+~/.cache/huggingface/
+.cache/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- 环境变量 ---
+.env
+.env.local
+*.env
+
+# --- 日志 ---
+*.log
+
+# --- 训练后的模型权重（按需下载） ---
+test_ce_backbone/
+reranker/checkpoints/
